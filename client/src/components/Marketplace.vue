@@ -98,7 +98,7 @@
           if (submitItem === true) {
             axios.post('http://'+hostconfig.hostip+':'+ hostconfig.hostport+'/api/marketplacedb', self.newItemObj)
               .then(function(response) {
-                toastr.success('Lottery Added successfully')
+                toastr.success('item Added successfully')
                 self.getItems()
                 self.newItemObj.username = ''
                 self.newItemObj.itemName = ''
